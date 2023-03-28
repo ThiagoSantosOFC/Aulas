@@ -61,7 +61,7 @@
 <p> let resto = 10 % 3; </p>
 
 <p> <strong> Condicional </strong> </p>
-```js
+
 if (idade >= 18) { 
 
  alert("Maior de idade"); 
@@ -71,4 +71,3 @@ if (idade >= 18) {
  alert("Menor de idade");
 
     }
-```
