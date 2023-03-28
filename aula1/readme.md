@@ -69,5 +69,4 @@ if (idade >= 18) {
  } else {
 
  alert("Menor de idade");
-
-    }
+  }
