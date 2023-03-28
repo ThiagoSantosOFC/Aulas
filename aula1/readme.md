@@ -61,7 +61,7 @@
 <p> let resto = 10 % 3; </p>
 
 <p> <strong> Condicional </strong> </p>
-```bash
+```js
 
 if (idade >= 18) { 
 
@@ -72,4 +72,3 @@ if (idade >= 18) {
  alert("Menor de idade");
 
     }
-```
