@@ -246,9 +246,9 @@ class Aluno extends Pessoa {
 var aluno = new Aluno("João", 20, "Ciência da Computação");
 
 aluno.apresentar();
+```
 
 ## Métodos estáticos
-
 
 Os métodos estáticos são usados para executar um bloco de código quando são chamados sem precis de instanciar uma classe.
 
@@ -267,7 +267,7 @@ class Pessoa {
 }
 Pessoa.apresentar();
 
-````
+```
 
 ## Métodos de instância
 
@@ -333,6 +333,7 @@ Pessoa.prototype.apresentar = function() {
 var pessoa = new Pessoa("João", 20);
 
 pessoa.apresentar();
+```
 
 ## Callback
 
@@ -370,6 +371,7 @@ function somar(x, y) {
 somar(10, 5).then(function(resultado) {
     console.log(resultado); // 15
 });
+```
 
 ## Async/Await
 
@@ -413,6 +415,7 @@ import { somar } from "./modulo.js";
 var resultado = somar(10, 5);
 
 console.log(resultado); // 15
+```
 
 ## Exceções
 
