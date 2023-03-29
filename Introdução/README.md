@@ -51,6 +51,7 @@ var atribuicaoMultiplicacao = x *= y; // 50
 var atribuicaoDivisao = x /= y; // 10
 var atribuicaoResto = x %= y; // 0
 var atribuicaoPotencia = x **= y; // 100000
+```
 
 ## Condicional
 
@@ -91,6 +92,7 @@ do {
 
     i++;
 } while (i < 10);
+```
 
 ## Funções
 
@@ -115,6 +117,7 @@ Exemplo:
 var frutas = ["maçã", "banana", "laranja"];
 
 var fruta = frutas[0]; // maçã
+```
 
 ## Objetos
 
@@ -147,6 +150,7 @@ class Pessoa {
 var pessoa = new Pessoa("João", 20);
 
 var nome = pessoa.nome; // João
+```
 
 ## Métodos
 
@@ -169,6 +173,45 @@ class Pessoa {
 var pessoa = new Pessoa("João", 20);
 
 pessoa.apresentar();
+```
+
+## Encapsulamento
+
+O encapsulamento é usado para proteger os dados de um objeto.
+
+Exemplo:
+
+```javascript
+
+class Pessoa {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    getNome() {
+        return this.nome;
+    }
+
+    setNome(nome) {
+        this.nome = nome;
+    }
+
+    getIdade() {
+        return this.idade;
+    }
+
+    setIdade(idade) {
+        this.idade = idade;
+    }
+}
+
+var pessoa = new Pessoa("João", 20);
+
+pessoa.setNome("Maria");
+
+pessoa.apresentar();
+```
 
 ## Herança
 
@@ -224,6 +267,8 @@ class Pessoa {
 }
 Pessoa.apresentar();
 
+````
+
 ## Métodos de instância
 
 Os métodos de instância são usados para executar um bloco de código quando são chamados sem precisar instanciar uma classe.
@@ -243,6 +288,7 @@ class Pessoa {
 }
 
 Pessoa.prototype.apresentar();
+```
 
 ## Métodos de classe
 
@@ -251,6 +297,7 @@ Os métodos de classe são usados para executar um bloco de código quando são 
 Exemplo:
 
 ```javascript
+
 class Pessoa {
     constructor(nome, idade) {
         this.nome = nome;
@@ -263,6 +310,7 @@ class Pessoa {
 }
 
 Pessoa.apresentar();
+```
 
 ## Métodos de protótipo
 
@@ -302,6 +350,7 @@ function somar(x, y, callback) {
 somar(10, 5, function(resultado) {
     console.log(resultado); // 15
 });
+```
 
 ## Promises
 
@@ -342,6 +391,7 @@ async function main() {
 }
 
 main();
+```
 
 ## Módulos
 
@@ -364,27 +414,17 @@ var resultado = somar(10, 5);
 
 console.log(resultado); // 15
 
-## Bibliotecas
+## Exceções
 
-As bibliotecas são usadas para executar um bloco de código quando uma ação for concluída.
+As exceções são usadas para lidar com erros.
 
 Exemplo:
 
 ```javascript
-// biblioteca.js
-
-function somar(x, y) {
-    return x;
+try {
+    var resultado = 10 / 0;
+} catch (e) {
+    console.log(e); // Erro: Divisão por zero
 }
 
-export { somar };
-
-// main.js
-
-import { somar } from "./biblioteca.js";
-
-var resultado = somar(10, 5);
-
-console.log(resultado); // 15
-
-
+```
