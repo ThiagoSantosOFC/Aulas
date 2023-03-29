@@ -134,6 +134,7 @@ var pessoa = {
 };
 
 var nome = pessoa.nome; // João
+```
 
 ## Classes
 
