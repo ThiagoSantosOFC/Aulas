@@ -67,6 +67,44 @@ if (idade >= 18) {
 } else {
     console.log("Menor de idade");
 }
+
+
+```
+
+## Switch
+
+O switch é usado para executar um bloco de código diferente dependendo do valor de uma variável.
+
+Exemplo:
+
+```javascript
+var dia = prompt("Digite o dia da semana");
+
+switch (dia) {
+    case "segunda":
+        console.log("Hoje é segunda-feira");
+        break;
+    case "terca":
+        console.log("Hoje é terça-feira");
+        break;
+    case "quarta":
+        console.log("Hoje é quarta-feira");
+        break;
+    case "quinta":
+        console.log("Hoje é quinta-feira");
+        break;
+    case "sexta":
+        console.log("Hoje é sexta-feira");
+        break;
+    case "sabado":
+        console.log("Hoje é sábado");
+        break;
+    case "domingo":
+        console.log("Hoje é domingo");
+        break;
+    default:
+        console.log("Dia inválido");
+}
 ```
 
 ## Laço de repetição
