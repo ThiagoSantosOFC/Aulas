@@ -12,7 +12,7 @@ Exemplo:
 var idade = 20;
 let nome = "João";
 const PI = 3.14;
-
+```
 
 ## Operadores
 
