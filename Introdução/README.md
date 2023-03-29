@@ -67,6 +67,7 @@ if (idade >= 18) {
 } else {
     console.log("Menor de idade");
 }
+```
 
 ## Laço de repetição
 
@@ -106,6 +107,7 @@ function soma(x, y) {
 }
 
 var resultado = soma(10, 5); // 15
+```
 
 ## Arrays
 
